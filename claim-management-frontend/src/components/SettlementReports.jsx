@@ -7,7 +7,7 @@ const SettlementReports = () => {
 
     try {
       const res = await axios.get(
-        `https://e8323325-9fea-40d9-a0fc-5aba07e1a323-00-1uedzks77cj6m.sisko.replit.dev/claims/settlement-report`,
+        `https://e8323325-9fea-40d9-a0fc-5aba07e1a323-00-1uedzks77cj6m.sisko.replit.dev/api/claims/settlement-report`,
         {
           headers: { Authorization: `Bearer ${token}` },
           responseType: "blob",
@@ -68,3 +68,4 @@ const SettlementReports = () => {
 };
 
 export default SettlementReports;
+
