@@ -9,7 +9,7 @@ const PostCard = () => {
 
   const fetchPosts = async (currentPage = 1) => {
     try {
-      const res = await axios.get(`https://e8323325-9fea-40d9-a0fc-5aba07e1a323-00-1uedzks77cj6m.sisko.replit.dev/posts/user?page=${currentPage}&limit=${limit}`);
+      const res = await axios.get(`https://e8323325-9fea-40d9-a0fc-5aba07e1a323-00-1uedzks77cj6m.sisko.replit.dev/api/posts/user?page=${currentPage}&limit=${limit}`);
       setPosts(res.data.posts);
       setTotalPages(res.data.totalPages);
       setPage(res.data.currentPage);
@@ -148,3 +148,4 @@ const PostCard = () => {
 };
 
 export default PostCard;
+
